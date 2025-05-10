@@ -4,3 +4,4 @@ langsmith
 openai
 python-dotenv
 streamlit
+pypdf
