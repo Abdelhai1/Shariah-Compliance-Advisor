@@ -31,7 +31,6 @@ This tool provides:
 
 ## 🧱 System Architecture
 
-```mermaid
 graph TD;
     A[User Input (PDF/Text)] --> B[Loader/Extractor]
     B --> C[LangChain + GPT-4]
