@@ -1,7 +1,45 @@
 
 # Shariah Compliance Advisor
 
-This project provides an AI-powered tool to check the compliance of contractual clauses with Shariah standards. It uses OpenAI GPT-4 to analyze and provide verdicts on lease and sale contracts, ensuring they align with Islamic financial principles.
+
+📘 An AI-powered assistant that checks financial clauses for **compliance with AAOIFI Shariah standards** (FAS 4, 10, 32) using **LangChain** and **OpenAI GPT-4**.
+
+---
+
+## 📌 Overview
+
+The **Shariah Compliance Advisor** was built for the **Hackathon Challenge 4 – Teams' Own Category**, focused on innovating tools for Islamic Finance using AI.
+
+This tool provides:
+- Automated Shariah compliance analysis
+- Support for both **text input** and **PDF upload**
+- Explanations and references to AAOIFI Financial Accounting Standards
+- Suggestions for compliant alternatives when issues are found
+
+---
+
+## 💡 Key Features
+
+✨ Built with [LangChain](https://www.langchain.com/) and [OpenAI GPT-4](https://platform.openai.com/)  
+📄 Upload contracts as PDF or paste clauses directly  
+🧠 Provides verdicts, reasoning, and compliant rewrites  
+📚 Cites **FAS 4, FAS 10, FAS 32** based on content  
+🧩 Modular structure for easy customization  
+📈 Optional LangSmith integration for observability and debugging
+
+---
+
+## 🧱 System Architecture
+
+```mermaid
+graph TD;
+    A[User Input (PDF/Text)] --> B[Loader/Extractor]
+    B --> C[LangChain + GPT-4]
+    C --> D[Shariah Compliance Prompt]
+    D --> E[Analysis Engine]
+    E --> F[Verdict + Correction]
+    F --> G[Streamlit Display]
+
 
 ## 🧪 Test Cases
 
